@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input class="js-input-element">
+    <button onclick="buttonClick()">Submit</button>
+    <p class="js-name-display"></p>
+
+    <script>
+        function buttonClick(){
+            const name = document.querySelector('.js-input-element').value;
+            document.querySelector('.js-name-display').innerText = `My name is: ${name}`;
+        }
+    </script>
+</body>
+</html>
